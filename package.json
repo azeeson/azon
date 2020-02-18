@@ -1,6 +1,6 @@
 {
   "name": "azon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Azon - JS micro utils",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,10 @@
     "url": "https://github.com/azeeson/azon/issues"
   },
   "homepage": "https://github.com/azeeson/azon#readme",
-  "keywords": ["JS", "Utils"],
+  "keywords": [
+    "JS",
+    "Utils"
+  ],
   "devDependencies": {
     "typescript": "^3.7.5"
   }

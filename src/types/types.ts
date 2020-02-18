@@ -1,0 +1,1 @@
+export type TFunc<TArgs extends any[] = []> = (...args: TArgs) => any;

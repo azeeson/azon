@@ -1,0 +1,27 @@
+{
+  "name": "azon",
+  "version": "0.1.0",
+  "description": "Azon - JS micro utils",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepushPatch": "npm run build",
+    "pushPatch": "npm version --no-commit-hooks patch && git push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azeeson/azon.git"
+  },
+  "author": "Alexander Medkov <azeeson@gmail.com> (https://twitter.com/azeeson)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azeeson/azon/issues"
+  },
+  "homepage": "https://github.com/azeeson/azon#readme",
+  "keywords": ["JS", "Utils"],
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}

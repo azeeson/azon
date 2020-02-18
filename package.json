@@ -6,8 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepushPatch": "npm run build",
+    "test": "mocha --reporter list tests/",
+    "prepushPatch": "npm run build && npm run test",
     "pushPatch": "npm version --no-commit-hooks patch && git push && npm publish"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "Utils"
   ],
   "devDependencies": {
+    "mocha": "^7.0.1",
     "typescript": "^3.7.5"
   }
 }
